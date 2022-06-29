@@ -4,4 +4,4 @@ import {nav, hero} from './homepage';
 const contentDiv = document.querySelector('#content');
 
 
-contentDiv.appendChild(nav());
+contentDiv.append(nav(), hero());
