@@ -11,7 +11,7 @@ function hero() {
     heroBtn.classList.add('hero-button', 'cta');
 
     heroTitle.textContent = 'Experience the Authentic Taste of Cebu';
-    heroText.textContent = 'Serving Cebu since 2022';
+    heroText.textContent = 'Serving the best goat dishes in the Visayas';
     heroBtn.textContent = 'Order Now';
 
     heroDiv.append(heroTitle, heroText, heroBtn);
