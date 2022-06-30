@@ -69,3 +69,9 @@ nav ul {
     border: none;
     padding: 1rem 1.4rem;
 }
+
+.hero .hero-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 100ms ease-in;
+}
