@@ -18,13 +18,6 @@ function hero() {
     return heroDiv;
 }
 
-function split() {
-    const splitDiv = document.createElement('div');
-    const splitDivText = document.createElement('div');
-    const splitDivImg = document.createElement('div');
-    
-}
-
 export {hero}
 
 

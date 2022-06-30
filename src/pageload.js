@@ -1,3 +1,4 @@
+import { hero } from "./homepage"; 
 
 function nav() {
     const nav = document.createElement('nav');
@@ -19,4 +20,9 @@ function navLinks() {
     return [menu, about];
 }
 
-export default nav;
+function initialPageLoad() {
+    const contentDiv = document.querySelector('#content');
+    contentDiv.append(nav(), hero());
+}
+
+export default initialPageLoad;

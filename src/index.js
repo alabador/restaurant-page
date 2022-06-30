@@ -1,8 +1,5 @@
 import './style.css';
-import {hero} from './homepage';
-import nav from './pageload';
+import initialPageLoad from './pageload';
 
-const contentDiv = document.querySelector('#content');
+initialPageLoad();
 
-
-contentDiv.append(nav(), hero());
