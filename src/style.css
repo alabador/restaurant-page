@@ -2,22 +2,27 @@
 
 :root {
     --main-color: #ce4949;
-
+    --dark-bg: rgb(44, 44, 44);
 }
 
 body, *{
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.margin-side {
-    margin: 0 5%;
+.padding-side {
+    padding: 0 5%;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--dark-bg);
+    color: white;
+    height: 10vh;
 }
 
 .nav h1 {
@@ -31,16 +36,27 @@ nav ul {
     font-size: 1.3rem;
 }
 
+.nav ul li:hover, .nav h1:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 100ms ease-in;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
     align-items: center;
-    height: 480px;
+    height: 90vh;
+    background-image: url(./images/cook-unsplash.jpg);
+    background-size: cover;
+    color: white;
 }
 
 .hero .hero-title{
     font-size: 2rem;
+    text-align: center;
 }
 
 .hero .hero-text {

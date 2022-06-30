@@ -1,5 +1,6 @@
 import './style.css';
-import {nav, hero} from './homepage';
+import {hero} from './homepage';
+import nav from './pageload';
 
 const contentDiv = document.querySelector('#content');
 
