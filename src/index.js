@@ -11,3 +11,5 @@ function clearPage() {
 
 initialPageLoad();
 
+
+export {clearPage};

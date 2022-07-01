@@ -1,3 +1,5 @@
+import { clearPage } from ".";
+import { menuLoad } from "./pageload";
 
 function hero() {
     const heroDiv = document.createElement('div');
@@ -14,11 +16,22 @@ function hero() {
     heroText.textContent = 'Serving the best goat dishes in the Visayas';
     heroBtn.textContent = 'Order Now';
 
+    heroBtn.addEventListener('click', clearPage);
+    heroBtn.addEventListener('click', menuLoad);
+
     heroDiv.append(heroTitle, heroText, heroBtn);
     return heroDiv;
 }
 
-export {hero}
+function heroOverlay() {
+    const heroOverlayDiv = document.createElement('div');
+    heroOverlayDiv.classList.add('overlay');
+    return heroOverlayDiv;
+}
+
+
+
+export {hero, heroOverlay}
 
 
 

@@ -1,4 +1,5 @@
-import { hero } from "./homepage"; 
+import { hero, heroOverlay } from "./homepage"; 
+import { menu } from "./menu";
 
 function nav() {
     const nav = document.createElement('nav');
@@ -20,9 +21,16 @@ function navLinks() {
     return [menu, about];
 }
 
+
 function initialPageLoad() {
     const contentDiv = document.querySelector('#content');
-    contentDiv.append(nav(), hero());
+    contentDiv.append(nav(), hero(), heroOverlay());
 }
 
-export {nav, initialPageLoad};
+function menuLoad() {
+    const contentDiv = document.querySelector('#content');
+    contentDiv.append(nav(), menu());
+    console.log('it loaded');
+}
+
+export {nav, initialPageLoad, menuLoad};
