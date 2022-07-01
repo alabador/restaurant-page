@@ -25,4 +25,4 @@ function initialPageLoad() {
     contentDiv.append(nav(), hero());
 }
 
-export default initialPageLoad;
+export {nav, initialPageLoad};
