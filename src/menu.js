@@ -13,14 +13,36 @@ const lechonKawali = new MenuItem('Lechon Kawali',
 );
 
 function menu() {
+    const menuDiv = document.createElement('div');
+    menuDiv.classList.add('menu-div');
+
+    menuDiv.append(menuHeader(), menuItem(lechonKawali));
+    return menuDiv;
+}
+
+function menuHeader() {
+    const menuHeader = document.createElement('div');
+    const menuTitle = document.createElement('h2');
+
+    menuHeader.classList.add('menu-header');
+    menuTitle.classList.add('menu-title');
+    menuTitle.textContent = 'Menu';
+    menuHeader.append(menuTitle);
+
+    return menuHeader;
+}
+
+function menuItem(item) {
     const itemDiv = document.createElement('div');
     const itemTitle = document.createElement('h3');
     const itemDesc = document.createElement('p');
     const itemPic = document.createElement('img'); 
 
-    itemTitle.textContent = lechonKawali.foodName;
-    itemDesc.textContent = lechonKawali.description;
-    itemPic.src = lechonKawali.img;
+    itemDiv.classList.add('item');
+
+    itemTitle.textContent = item.foodName;
+    itemDesc.textContent = item.description;
+    itemPic.src = item.img;
 
     itemDiv.append(itemTitle, itemDesc, itemPic);
     return itemDiv;
