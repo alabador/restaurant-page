@@ -20,6 +20,7 @@ body, *{
     position: relative;
 }
 
+/*Nav Styles*/
 .nav {
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,7 @@ nav ul {
     transition: 100ms ease-in;
 }
 
+/*Homepage*/
 .hero {
     display: flex;
     flex-direction: column;
@@ -80,4 +82,33 @@ nav ul {
     cursor: pointer;
     transform: scale(1.1);
     transition: 100ms ease-in;
+}
+
+/*Menu Styles*/
+.menu-div {
+    text-align: center;
+}
+
+.menu-div .menu-header {
+    margin: 3rem 0;
+    font-size: 24px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 24px auto; 
+    margin: 48px 0;
+}
+
+.item h3 {
+    font-size: 18px;
+}
+
+.item img {
+    max-height: 300px;
+    width: 60%;
+    object-fit: cover;
 }
