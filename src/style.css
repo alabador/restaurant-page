@@ -69,6 +69,7 @@ nav ul {
 
 .hero .hero-text {
     font-size: 1.4rem;
+    text-align: center;
 }
 
 .hero .hero-button {
@@ -87,6 +88,7 @@ nav ul {
 /*Menu Styles*/
 .menu-div {
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .menu-div .menu-header {
@@ -99,16 +101,19 @@ nav ul {
     flex-direction: column;
     gap: 12px;
     align-items: center;
-    padding: 24px auto; 
-    margin: 48px 0;
+    margin: 16px 15%;
+    border: 2px solid var(--dark-bg);
+    border-radius: 8px;
 }
 
 .item h3 {
-    font-size: 18px;
+    font-size: 21px;
+    margin: 1.5rem auto 1rem; 
 }
 
 .item img {
     max-height: 300px;
     width: 60%;
     object-fit: cover;
+    margin: 1.5rem auto 2rem;
 }

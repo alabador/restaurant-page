@@ -43,6 +43,7 @@ function menuItem(item) {
     const itemPic = document.createElement('img'); 
 
     itemDiv.classList.add('item');
+    itemDiv.classList.add('padding-side');
 
     itemTitle.textContent = item.foodName;
     itemDesc.textContent = item.description;
